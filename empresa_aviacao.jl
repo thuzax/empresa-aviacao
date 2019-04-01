@@ -31,6 +31,7 @@ pilotos = [30, 20, 10]
         2 * quantidades[3] <= pilotos[3]
         2 * quantidades[1] + 2 * quantidades[3] <= pilotos[1] + pilotos[3]
         2 * quantidades[2] + 2 * quantidades[3] <= pilotos[2] + pilotos[3]
+        2 * sum(quantidades[i] for i in tipos_avioes) <= sum(pilotos[i] for i in tipos_avioes)
     end
 )
 
